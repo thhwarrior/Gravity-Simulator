@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1200.0" style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SimulationController">
+   <children>
+      <MenuBar id="menubar" prefHeight="25.0" prefWidth="1200.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Save" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#Help" text="Help" />
+                  <MenuItem mnemonicParsing="false" onAction="#AboutUs" text="About Us" />
+                <MenuItem mnemonicParsing="false" onAction="#ExitProgram" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Canvas id="canvas" fx:id="canvas" height="600.0" layoutY="25.0" width="1200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+      <Button id="addButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1000.0" layoutY="25.0" mnemonicParsing="false" onAction="#openForm" prefHeight="20.0" prefWidth="200.0" text="Add planet" textAlignment="CENTER" translateZ="1.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </Button>
+   </children>
+</AnchorPane>

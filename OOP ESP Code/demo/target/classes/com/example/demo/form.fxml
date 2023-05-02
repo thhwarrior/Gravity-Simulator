@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300.0" minWidth="350.0" prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SimulationController">
+   <children>
+      <TextField id="n_in" fx:id="n_in" layoutX="160.0" layoutY="39.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField id="r_in" fx:id="r_in" layoutX="160.0" layoutY="90.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField id="m_in" fx:id="m_in" layoutX="160.0" layoutY="140.0" prefHeight="25.0" prefWidth="150.0" />
+      <ColorPicker id="c_in" fx:id="c_in" layoutX="160.0" layoutY="190.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label id="radius" alignment="CENTER" layoutX="40.0" layoutY="89.0" prefHeight="25.0" prefWidth="90.0" style="-fx-border-color: lightgray;" text="Radius:" textAlignment="CENTER">
+         <font>
+            <Font name="MS Outlook" size="15.0" />
+         </font>
+      </Label>
+      <Label id="mass" alignment="CENTER" layoutX="40.0" layoutY="139.0" prefHeight="25.0" prefWidth="90.0" style="-fx-border-color: lightgray;" text="Mass:" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label id="color" alignment="CENTER" layoutX="40.0" layoutY="189.0" prefHeight="25.0" prefWidth="90.0" style="-fx-border-color: lightgray;" text="Color" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label id="name" alignment="CENTER" layoutX="40.0" layoutY="39.0" prefHeight="25.0" prefWidth="90.0" style="-fx-border-color: lightgray;" text="Name:" textAlignment="CENTER">
+         <font>
+            <Font name="MS Outlook" size="15.0" />
+         </font>
+      </Label>
+      <Button id="confirmButton" fx:id="confirmButton" layoutX="120.0" layoutY="345.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="25.0" prefWidth="100.0" text="Confirm" />
+      <Slider id="vx_in" fx:id="vx_in" layoutX="160.0" layoutY="245.0" max="200.0" min="-200.0" onDragDetected="#ChangeSliderValue" prefHeight="15.0" prefWidth="150.0" />
+      <Label fx:id="VelXLabel" alignment="CENTER" layoutX="25.0" layoutY="239.0" prefHeight="25.0" prefWidth="110.0" style="-fx-border-color: lightgray;" text="Velocity X: 0" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label id="color" fx:id="VelYLabel" alignment="CENTER" layoutX="25.0" layoutY="289.0" prefHeight="25.0" prefWidth="110.0" style="-fx-border-color: lightgray;" text="Velocity Y: 0" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Slider id="vy_in" fx:id="vy_in" layoutX="160.0" layoutY="295.0" max="200.0" min="-200.0" onDragDetected="#ChangeSliderValue" prefHeight="15.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
